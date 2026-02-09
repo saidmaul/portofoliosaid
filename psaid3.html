@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Experience</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient( #10191c, #083c5a);
+      color: white;
+      min-height: 100vh;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      background-color: #0b4a6f;
+      padding: 15px 60px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #ff7a00;
+    }
+
+    /* ===== EXPERIENCE SECTION ===== */
+    .experience {
+      display: flex;
+      align-items: center;
+      padding: 80px 100px;
+      gap: 80px;
+    }
+
+    /* FOTO */
+    .profile {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background-color: red;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* TEXT */
+    .experience-content h1 {
+      color: #ff7a00;
+      font-size: 42px;
+      margin-bottom: 30px;
+      font-family: "Georgia", serif;
+    }
+
+    .experience-list {
+      list-style: none;
+      max-width: 700px;
+    }
+
+    .experience-list li {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 18px;
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .experience-list li::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      color: white;
+    }
+
+    /* RESPONSIVE (optional, tapi aman) */
+    @media (max-width: 900px) {
+      .experience {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .experience-list li {
+        padding-left: 0;
+      }
+
+      .experience-list li::before {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="psaid2.html">ABOUT</a>
+    <a href="psaid3.html">EXPERIENCE</a>
+    <a href="psaid4.html">SKILL</a>
+    <a href="psaid5.html">CERTIFICATE</a>
+    <a href="psaid6.html">CONTACT</a>
+  </nav>
+
+  <!-- EXPERIENCE -->
+  <section class="experience">
+    <div class="profile">
+      <!-- GANTI FOTO DI SINI -->
+      <img src="gambar/fotosaid.jpeg" alt="Profile">
+    </div>
+
+    <div class="experience-content">
+      <h1>Experience</h1>
+      <ul class="experience-list">
+        <li>Membantu proses instalasi jaringan WiFi, termasuk penarikan kabel, pemasangan router, dan konfigurasi dasar jaringan.</li>
+        <li>Terlibat dalam instalasi dan perawatan CCTV, mulai dari pemasangan kamera, pengaturan DVR/NVR, hingga pengecekan kualitas gambar.</li>
+        <li>Melakukan troubleshooting pada jaringan internet dan sistem CCTV yang mengalami gangguan.</li>
+        <li>Mendukung tim teknis dalam survey lokasi dan persiapan alat sebelum instalasi.</li>
+        <li>Berkolaborasi dengan teknisi lapangan untuk memastikan instalasi berjalan sesuai standar dan kebutuhan klien.</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>
